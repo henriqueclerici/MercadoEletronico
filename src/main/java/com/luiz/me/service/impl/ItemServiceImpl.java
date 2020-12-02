@@ -31,11 +31,11 @@ public class ItemServiceImpl implements ItemService{
     @Override
     public void validarItens(Item item) {
         
-        if(null == item.getDescricao() && item.getDescricao().equals("")) {
+        if(null == item.getDescricao() || item.getDescricao().equals("")) {
             throw new ItemException(Error.DESCRICAO_ITEM_INVALIDA);
         }else if (item.getPrecoUnitario() == BigDecimal.ZERO || item.getPrecoUnitario().compareTo(BigDecimal.ZERO) < 0) {
             throw new ItemException(Error.PRECO_ITEM_INVALIDA);
-        }else if (null == item.getQtd() && item.getQtd().compareTo(0L) < 0) {
+        }else if (null == item.getQtd() || item.getQtd().compareTo(0L) < 0) {
             throw new ItemException(Error.QTD_ITEM_INVALIDA);
         }
         

@@ -1,6 +1,7 @@
 # MercadoEletronico
 Api criada para cadastro de pedidos e controle de status que vai alterando pela regra de negócio implementada no código. 
-#Tecnologias
+
+# Tecnologias
 * Springboot
 * Java 8
 * H2

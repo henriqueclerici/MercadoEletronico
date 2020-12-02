@@ -1,5 +1,5 @@
 # MercadoEletronico
-Api criada para cadastro de pedidos e controle de status que vai alteradno pela regra de negócio implemntada no código. 
+Api criada para cadastro de pedidos e controle de status que vai alterando pela regra de negócio implementada no código. 
 #Tecnologias
 * Springboot
 * Java 8
